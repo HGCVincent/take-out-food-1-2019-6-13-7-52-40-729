@@ -1,5 +1,5 @@
 const loadAllItems = require('../src/items');
-const loadPromotions = require('../src/promotions');
+const Promotions = require('../src/promotions');
 
 function bestCharge(selectedItems) {
     return /*TODO*/;
@@ -34,11 +34,11 @@ const calculateAmountOfSelectItem = (selectItems) =>{
   return selectItemsAndAmount;
 }
 
-const calculateTotalPriceOfFullReduction = (selectItemsAndAmount) => {
+const calculateTotalPriceOfFullReductionPromotion = (selectItemsAndAmount) => {
   let TotalPrice = 0;
   let discountPrice = 0;
-  for (let itemAndAmount in selectItemsAndAmount){
-    TotalPrice += selectItemsAndAmount[itemAndAmount] * allItems()[itemAndAmount].price;
+  for (let itemId in selectItemsAndAmount){
+    TotalPrice += selectItemsAndAmount[itemId] * allItems()[itemId].price;
   }
   if (TotalPrice > 30){
     discountPrice = 6;
@@ -46,10 +46,28 @@ const calculateTotalPriceOfFullReduction = (selectItemsAndAmount) => {
   return {'discountType': '满30减6元','discountPrice': discountPrice,'totalPricePayable': TotalPrice - discountPrice}
 }
 
+const calculateTotalPriceOfHalfPricePromotion = (selectItemsAndAmount) => {
+  let TotalPrice = 0;
+  let discountPrice = 0;
+  let discountItem = [];
+  let halfPricePromotion = Promotions()[1];
+  for (let itemId in selectItemsAndAmount){
+    for (let i = 0 ; i <halfPricePromotion.items.length; i++) {
+      if (itemId == halfPricePromotion.items[i]){
+        discountPrice += selectItemsAndAmount[itemId] * allItems()[itemId].price / 2;
+        discountItem.push(allItems()[itemId].name);
+      }
+    }
+    TotalPrice += selectItemsAndAmount[itemId] * allItems()[itemId].price;
+  }
+  return {'discountType': '指定菜品半价','discountPrice': discountPrice,'totalPricePayable': TotalPrice - discountPrice,'discountItem': discountItem};
+}
+
 const Discount = (selectItemsAndAmount) => {
 }
 module.exports = {
   isValid,
   calculateAmountOfSelectItem,
-  calculateTotalPriceOfFullReduction
+  calculateTotalPriceOfFullReductionPromotion,
+  calculateTotalPriceOfHalfPricePromotion
 }
