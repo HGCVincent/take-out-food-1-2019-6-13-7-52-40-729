@@ -1,10 +1,6 @@
 const loadAllItems = require('../src/items');
 const Promotions = require('../src/promotions');
 
-function bestCharge(selectedItems) {
-    return /*TODO*/;
-}
-
 const allItems = () => {
   let items = {}
   loadAllItems().forEach(item => {
@@ -65,13 +61,41 @@ const calculateTotalPriceOfHalfPricePromotion  = (selectItemsAndAmount) => {
 
 const Discount = (selectItemsAndAmount) => {
   let fullReductionPromotion = calculateTotalPriceOfFullReductionPromotion(selectItemsAndAmount);
-  let halfPricePromotion = calculateTotalPriceOfHalfPricePromotion();
-  if (fullReductionPromotion.discountPrice > halfPricePromotion.discountPrice){
+  let halfPricePromotion = calculateTotalPriceOfHalfPricePromotion(selectItemsAndAmount);
+  if(fullReductionPromotion.discountPrice === 0 && halfPricePromotion.discountPrice ===0){
+    fullReductionPromotion.discountType = '无';
+    return fullReductionPromotion;
+  }
+  else if (fullReductionPromotion.discountPrice > halfPricePromotion.discountPrice){
     return fullReductionPromotion;
   }
   else return halfPricePromotion;
 }
 
+function bestCharge(selectedItems) {
+  let selectItemsAndAmount = calculateAmountOfSelectItem(selectedItems);
+  let bestDiscount = Discount(selectItemsAndAmount);
+  let result = '============= 订餐明细 =============\n';
+  for (let id in selectItemsAndAmount){
+    result += `${allItems()[id].name} x ${selectItemsAndAmount[id]} = ${allItems()[id].price * selectItemsAndAmount[id]}元\n`;
+  }
+  if(bestDiscount.discountType !== '无' && bestDiscount.discountType === '满30减6元'){
+    result += `-----------------------------------\n使用优惠:\n`;
+    result += `${bestDiscount.discountType}，省${bestDiscount.discountPrice}元\n`
+  }
+  if(bestDiscount.discountType !== '无' && bestDiscount.discountType === '指定菜品半价'){
+    result += `-----------------------------------\n使用优惠:\n`;
+    result += `${bestDiscount.discountType}(`;
+    bestDiscount.discountItem.forEach(name => {
+      result += `${name}，`;
+    })
+    result = result.substring(0,result.length - 1) + `)，省${bestDiscount.discountPrice}元\n`;
+  }
+  result += `-----------------------------------
+总计：${bestDiscount.totalPricePayable}元
+===================================`;
+  return result;
+}
 
 module.exports = {
   isValid,
@@ -79,4 +103,5 @@ module.exports = {
   calculateTotalPriceOfFullReductionPromotion,
   calculateTotalPriceOfHalfPricePromotion,
   Discount,
+  bestCharge
 }

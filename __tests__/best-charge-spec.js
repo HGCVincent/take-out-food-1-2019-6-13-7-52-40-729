@@ -65,13 +65,59 @@ it("should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0
   expect(result).toEqual(expectResult);
 });
 
-it("should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}", () => {
+it("should be return follow when invoke Discount given {'ITEM0001': '1', 'ITEM0013' : '2', 'ITEM0022': '1'}", () => {
   //given
-  const input = {"ITEM0013" : "4", "ITEM0022" : "1"};
+  const input = {'ITEM0001': '1', 'ITEM0013' : '2', 'ITEM0022': '1'};
   //when
   const result = best_charge.Discount(input);
   //then
-  expectResult = {'discountType': '满30减6元','discountPrice': 6,'totalPricePayable': 26};
+  expectResult = {'discountType': '指定菜品半价','discountPrice': 13,'totalPricePayable': 25,'discountItem' :['黄焖鸡','凉皮']};
   expect(result).toEqual(expectResult);
+});
+
+//test of function bestCharge
+it('should generate best charge when best is 指定菜品半价', function() {
+  let inputs = ["ITEM0001 x 1", "ITEM0013 x 2", "ITEM0022 x 1"];
+  let summary = best_charge.bestCharge(inputs).trim();
+  let expected = `
+============= 订餐明细 =============
+黄焖鸡 x 1 = 18元
+肉夹馍 x 2 = 12元
+凉皮 x 1 = 8元
+-----------------------------------
+使用优惠:
+指定菜品半价(黄焖鸡，凉皮)，省13元
+-----------------------------------
+总计：25元
+===================================`.trim()
+  expect(summary).toEqual(expected)
+});
+
+it('should generate best charge when best is 满30减6元', function() {
+  let inputs = ["ITEM0013 x 4", "ITEM0022 x 1"];
+  let summary = best_charge.bestCharge(inputs).trim();
+  let expected = `
+============= 订餐明细 =============
+肉夹馍 x 4 = 24元
+凉皮 x 1 = 8元
+-----------------------------------
+使用优惠:
+满30减6元，省6元
+-----------------------------------
+总计：26元
+===================================`.trim()
+  expect(summary).toEqual(expected)
+});
+
+it('should generate best charge when no promotion can be used', function() {
+  let inputs = ["ITEM0013 x 4"];
+  let summary = best_charge.bestCharge(inputs).trim();
+  let expected = `
+============= 订餐明细 =============
+肉夹馍 x 4 = 24元
+-----------------------------------
+总计：24元
+===================================`.trim()
+  expect(summary).toEqual(expected)
 });
 

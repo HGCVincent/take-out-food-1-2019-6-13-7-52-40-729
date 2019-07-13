@@ -17,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/__tests__/best-charge-spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
+            <state relative-caret-position="122">
+              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/best-charge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+            <state relative-caret-position="186">
+              <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
             </state>
           </provider>
         </entry>
@@ -72,8 +72,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/best-charge-spec.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-75">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="375">
+              <caret line="15" column="6" selection-start-line="15" selection-end-line="15" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -173,7 +173,35 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Jest.should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}">
+  <component name="RunManager" selected="Jest.best-charge-spec.js">
+    <configuration name="Take out food.should generate best charge when best is 满30减6元" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/spec/best-charge-spec.js" />
+      <test-names>
+        <test-name value="Take out food" />
+        <test-name value="should generate best charge when best is 满30减6元" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Take out food.should generate best charge when no promotion can be used" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/spec/best-charge-spec.js" />
+      <test-names>
+        <test-name value="Take out food" />
+        <test-name value="should generate best charge when no promotion can be used" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="best-charge-spec.js" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -184,7 +212,7 @@
       <test-file value="$PROJECT_DIR$/__tests__/best-charge-spec.js" />
       <method v="2" />
     </configuration>
-    <configuration name="should be return falg when invoke calculateTotalPriceOfFullReduction given {&quot;ITEM0013&quot; : &quot;4&quot;, &quot;ITEM0022&quot; : &quot;1&quot;}" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="should generate best charge when best is 指定菜品半价" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -193,11 +221,11 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/__tests__/best-charge-spec.js" />
       <test-names>
-        <test-name value="should be return falg when invoke calculateTotalPriceOfFullReduction given {&quot;ITEM0013&quot; : &quot;4&quot;, &quot;ITEM0022&quot; : &quot;1&quot;}" />
+        <test-name value="should generate best charge when best is 指定菜品半价" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="should generate best charge when no promotion can be used" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -206,43 +234,17 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/__tests__/best-charge-spec.js" />
       <test-names>
-        <test-name value="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should be return falg when item is ['ITEM0001 x 4','ITEM0013 x 3']" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/__tests__/best-charge-spec.js" />
-      <test-names>
-        <test-name value="should be return falg when item is ['ITEM0001 x 4','ITEM0013 x 3']" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/__tests__/best-charge-spec.js" />
-      <test-names>
-        <test-name value="should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" />
+        <test-name value="should generate best charge when no promotion can be used" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" />
-        <item itemvalue="Jest.should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" />
         <item itemvalue="Jest.best-charge-spec.js" />
-        <item itemvalue="Jest.should be return falg when invoke calculateTotalPriceOfFullReduction given {&quot;ITEM0013&quot; : &quot;4&quot;, &quot;ITEM0022&quot; : &quot;1&quot;}" />
-        <item itemvalue="Jest.should be return falg when item is ['ITEM0001 x 4','ITEM0013 x 3']" />
+        <item itemvalue="Jest.should generate best charge when no promotion can be used" />
+        <item itemvalue="Jest.Take out food.should generate best charge when best is 满30减6元" />
+        <item itemvalue="Jest.Take out food.should generate best charge when no promotion can be used" />
+        <item itemvalue="Jest.should generate best charge when best is 指定菜品半价" />
       </list>
     </recent_temporary>
   </component>
@@ -256,44 +258,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562985882409</updated>
-      <workItem from="1562985884730" duration="19743000" />
+      <workItem from="1562985884730" duration="23764000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="should_be_return_falg_when_invoke_calculateTotalPriceOfHalfPricePromotion_given_{'ITEM0001'___'1',_'ITEM0013'___'2','ITEM0022'___'1'} - 2019.07.13 at 15h 58m 58s.xml">
-      <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 23m 38s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_falg_when_invoke_calculateTotalPriceOfHalfPricePromotion_given_{'ITEM0001'___'1',_'ITEM0013'___'2','ITEM0022'___'1'} - 2019.07.13 at 15h 59m 06s.xml">
-      <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 23m 44s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_falg_when_invoke_calculateTotalPriceOfHalfPricePromotion_given_{'ITEM0001'___'1',_'ITEM0013'___'2','ITEM0022'___'1'} - 2019.07.13 at 16h 00m 53s.xml">
-      <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Take_out_food_should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 23m 54s.xml">
+      <configuration name="Take out food.should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_falg_when_invoke_calculateTotalPriceOfHalfPricePromotion_given_{'ITEM0001'___'1',_'ITEM0013'___'2','ITEM0022'___'1'} - 2019.07.13 at 16h 03m 04s.xml">
-      <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_be_return_follow_when_invoke_Discount_given_{'ITEM0001'__'1',_'ITEM0013'___'2',_'ITEM0022'__'1'} - 2019.07.13 at 17h 24m 02s.xml">
+      <configuration name="should be return follow when invoke Discount given {'ITEM0001': '1', 'ITEM0013' : '2', 'ITEM0022': '1'}" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_falg_when_invoke_calculateTotalPriceOfHalfPricePromotion_given_{'ITEM0001'___'1',_'ITEM0013'___'2','ITEM0022'___'1'} - 2019.07.13 at 16h 06m 47s.xml">
-      <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Take_out_food_should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 24m 07s.xml">
+      <configuration name="Take out food.should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_falg_when_invoke_calculateTotalPriceOfHalfPricePromotion_given_{'ITEM0001'___'1',_'ITEM0013'___'2','ITEM0022'___'1'} - 2019.07.13 at 16h 07m 10s.xml">
-      <configuration name="should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="Take_out_food_should_generate_best_charge_when_best_is_满30减6元 - 2019.07.13 at 17h 24m 13s.xml">
+      <configuration name="Take out food.should generate best charge when best is 满30减6元" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_follow_when_invoke_Discount_given_{'ITEM0013'___'4',_'ITEM0022'___'1'} - 2019.07.13 at 16h 20m 21s.xml">
-      <configuration name="should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 24m 32s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_follow_when_invoke_Discount_given_{'ITEM0013'___'4',_'ITEM0022'___'1'} - 2019.07.13 at 16h 21m 19s.xml">
-      <configuration name="should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 24m 47s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_follow_when_invoke_Discount_given_{'ITEM0013'___'4',_'ITEM0022'___'1'} - 2019.07.13 at 16h 22m 09s.xml">
-      <configuration name="should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 27m 35s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
-    <history-entry file="should_be_return_follow_when_invoke_Discount_given_{'ITEM0013'___'4',_'ITEM0022'___'1'} - 2019.07.13 at 16h 22m 35s.xml">
-      <configuration name="should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}" configurationId="JavaScriptTestRunnerJest" />
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 31m 03s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19743000" />
+    <option name="totallyTimeSpent" value="23764000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -305,7 +307,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20726173" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -314,8 +316,8 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50075644" side_tool="true" weight="0.32805756" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3266187" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.37410071" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43597123" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.37410071" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -333,18 +335,6 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/best-charge.js</url>
-          <line>68</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/__test__/best-charge_spec.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -360,15 +350,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run-specs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-58" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/promotions.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="31" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/items.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -382,31 +374,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/items.js">
+    <entry file="file://$PROJECT_DIR$/run-specs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="17" />
+        <state relative-caret-position="-58" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/best-charge-spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="6" selection-start-line="15" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/__tests__/best-charge-spec.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="65" column="3" lean-forward="true" selection-start-line="65" selection-start-column="3" selection-end-line="65" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/best-charge-spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="13" />
+        <state relative-caret-position="122">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/best-charge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="68" column="44" selection-start-line="68" selection-start-column="44" selection-end-line="68" selection-end-column="44" />
+        <state relative-caret-position="186">
+          <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
         </state>
       </provider>
     </entry>
