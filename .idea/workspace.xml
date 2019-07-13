@@ -38,8 +38,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/best-charge.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
+            <state relative-caret-position="200">
+              <caret line="32" column="49" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -132,11 +132,6 @@
               <item name="take-out-food-1-2019-6-13-7-52-40-729" type="b2602c69:ProjectViewProjectNode" />
               <item name="take-out-food-1-2019-6-13-7-52-40-729" type="462c0819:PsiDirectoryNode" />
               <item name="__tests__" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="take-out-food-1-2019-6-13-7-52-40-729" type="b2602c69:ProjectViewProjectNode" />
-              <item name="take-out-food-1-2019-6-13-7-52-40-729" type="462c0819:PsiDirectoryNode" />
-              <item name="spec" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="take-out-food-1-2019-6-13-7-52-40-729" type="b2602c69:ProjectViewProjectNode" />
@@ -258,17 +253,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1562985882409</updated>
-      <workItem from="1562985884730" duration="23764000" />
+      <workItem from="1562985884730" duration="25145000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 23m 38s.xml">
-      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
-    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 23m 44s.xml">
-      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
-    </history-entry>
     <history-entry file="Take_out_food_should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 23m 54s.xml">
       <configuration name="Take out food.should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
@@ -293,9 +282,15 @@
     <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 31m 03s.xml">
       <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
     </history-entry>
+    <history-entry file="should_generate_best_charge_when_no_promotion_can_be_used - 2019.07.13 at 17h 32m 01s.xml">
+      <configuration name="should generate best charge when no promotion can be used" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
+    <history-entry file="best-charge-spec_js - 2019.07.13 at 17h 32m 13s.xml">
+      <configuration name="best-charge-spec.js" configurationId="JavaScriptTestRunnerJest" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23764000" />
+    <option name="totallyTimeSpent" value="25145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
@@ -307,7 +302,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.20726173" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20726173" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -316,7 +311,7 @@
       <window_info anchor="bottom" id="Event Log" sideWeight="0.50075644" side_tool="true" weight="0.32805756" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3276923" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.43597123" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.15683453" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.37410071" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -395,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/best-charge.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="86" column="61" selection-start-line="86" selection-start-column="61" selection-end-line="86" selection-end-column="61" />
+        <state relative-caret-position="200">
+          <caret line="32" column="49" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="49" />
         </state>
       </provider>
     </entry>
