@@ -33,7 +33,7 @@ it("should be return falg when item is ['ITEM0001 x 4','ITEM0013 x 3']", () => {
 });
 
 // test of function calculateTotalPriceOfFullReduction
-it("should be return falg when invoke calculateTotalPriceOfFullReductionPromotion given {'ITEM0013' : '4', 'ITEM0022' : '1'}", () => {
+it("should be return follow when invoke calculateTotalPriceOfFullReductionPromotion given {'ITEM0013' : '4', 'ITEM0022' : '1'}", () => {
   //given
   const input = {"ITEM0013" : "4", "ITEM0022" : "1"};
   //when
@@ -44,7 +44,7 @@ it("should be return falg when invoke calculateTotalPriceOfFullReductionPromotio
 });
 
 // test of function calculateTotalPriceOfHalfPricePromotion
-it("should be return falg when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}", () => {
+it("should be return follow when invoke calculateTotalPriceOfHalfPricePromotion given {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'}", () => {
   //given
   const input = {'ITEM0001' : '1', 'ITEM0013' : '2','ITEM0022' : '1'};
   //when
@@ -53,3 +53,25 @@ it("should be return falg when invoke calculateTotalPriceOfHalfPricePromotion gi
   expectResult = {'discountType': '指定菜品半价','discountPrice': 13,'totalPricePayable': 25,'discountItem' :['黄焖鸡','凉皮']};
   expect(result).toEqual(expectResult);
 });
+
+// test of function Discount
+it("should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}", () => {
+  //given
+  const input = {"ITEM0013" : "4", "ITEM0022" : "1"};
+  //when
+  const result = best_charge.Discount(input);
+  //then
+  expectResult = {'discountType': '满30减6元','discountPrice': 6,'totalPricePayable': 26};
+  expect(result).toEqual(expectResult);
+});
+
+it("should be return follow when invoke Discount given {'ITEM0013' : '4', 'ITEM0022' : '1'}", () => {
+  //given
+  const input = {"ITEM0013" : "4", "ITEM0022" : "1"};
+  //when
+  const result = best_charge.Discount(input);
+  //then
+  expectResult = {'discountType': '满30减6元','discountPrice': 6,'totalPricePayable': 26};
+  expect(result).toEqual(expectResult);
+});
+

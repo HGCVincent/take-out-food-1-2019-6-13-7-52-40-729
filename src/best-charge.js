@@ -46,7 +46,7 @@ const calculateTotalPriceOfFullReductionPromotion = (selectItemsAndAmount) => {
   return {'discountType': '满30减6元','discountPrice': discountPrice,'totalPricePayable': TotalPrice - discountPrice}
 }
 
-const calculateTotalPriceOfHalfPricePromotion = (selectItemsAndAmount) => {
+const calculateTotalPriceOfHalfPricePromotion  = (selectItemsAndAmount) => {
   let TotalPrice = 0;
   let discountPrice = 0;
   let discountItem = [];
@@ -64,10 +64,19 @@ const calculateTotalPriceOfHalfPricePromotion = (selectItemsAndAmount) => {
 }
 
 const Discount = (selectItemsAndAmount) => {
+  let fullReductionPromotion = calculateTotalPriceOfFullReductionPromotion(selectItemsAndAmount);
+  let halfPricePromotion = calculateTotalPriceOfHalfPricePromotion();
+  if (fullReductionPromotion.discountPrice > halfPricePromotion.discountPrice){
+    return fullReductionPromotion;
+  }
+  else return halfPricePromotion;
 }
+
+
 module.exports = {
   isValid,
   calculateAmountOfSelectItem,
   calculateTotalPriceOfFullReductionPromotion,
-  calculateTotalPriceOfHalfPricePromotion
+  calculateTotalPriceOfHalfPricePromotion,
+  Discount,
 }
